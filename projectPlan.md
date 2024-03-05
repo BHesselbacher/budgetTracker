@@ -1,8 +1,8 @@
 # Project Plan
 ## Week 8 - Web Services Intro
 - [x] Write problem statement and technologies/techniques in README.md
-- [ ] Create screen designs
-- [ ] Write user stories
+- [x] Create screen designs
+- [x] Write user stories
 ## Spring Break
 - [ ] Design and create database
 - [ ] Add a DAO with full CRUD implemented with Hibernate
