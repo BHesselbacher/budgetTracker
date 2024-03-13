@@ -17,7 +17,7 @@ public class BudgetType {
     @GenericGenerator(name = "native",strategy = "native")
     private int id;
 
-    @Column(name = "type")
+    @Column
     private String type;
 
     /**
