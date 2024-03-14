@@ -34,4 +34,36 @@ public class Budget {
     public Budget(double amount) {
         this.amount = amount;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public List<Month> getMonths() {
+        return months;
+    }
+
+    public void setMonths(List<Month> months) {
+        this.months = months;
+    }
+
+    public List<BudgetType> getBudgetTypes() {
+        return budgetTypes;
+    }
+
+    public void setBudgetTypes(List<BudgetType> budgetTypes) {
+        this.budgetTypes = budgetTypes;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
 }
