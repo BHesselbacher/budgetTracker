@@ -4,12 +4,12 @@
 - [x] Create screen designs
 - [x] Write user stories
 ## Spring Break
-- [ ] Design and create database
+- [x] Design and create database
 - [ ] Add a DAO with full CRUD implemented with Hibernate
 - [ ] Create unit test for DAO
 - [ ] Implement Log4J
 ## Week 9 - RESTFul Web Services
-- [ ] Deploy to AWS
+- [x] Deploy to AWS
 - [ ] Have at least one JSP that displays the data from the database
 - [ ] Implement authentication
 ## Week 10 - Work Week
