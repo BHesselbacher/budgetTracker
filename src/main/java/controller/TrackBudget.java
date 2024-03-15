@@ -1,5 +1,7 @@
 package controller;
 
+import persistence.BudgetDAO;
+
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -25,11 +27,11 @@ public class TrackBudget extends HttpServlet {
         String searchTerm = req.getParameter("searchTerm");
 
         // Search for the user
-        UserDao userDao = new UserDao();
+        BudgetDAO budgetDAO = new BudgetDAO();
 
-        req.setAttribute("users", userDao.getAll());
+        req.setAttribute("budgets", budgetDAO.getAll());
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/budget.jsp");
         dispatcher.forward(req, resp);
     }
 }

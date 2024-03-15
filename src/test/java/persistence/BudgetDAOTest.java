@@ -1,6 +1,9 @@
 package persistence;
 
+import entity.*;
 import org.junit.jupiter.api.*;
+import static org.junit.jupiter.api.Assertions.*;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -18,7 +21,11 @@ class BudgetDAOTest {
     }
 
     @Test
-    void getById() {
+    void getByIdSuccess() {
+        // Retrieve a Budget and verify
+        Budget retrievedBudget = budgetDAO.getById(1);
+        assertNotNull(retrievedBudget);
+        assertEquals(34.50, retrievedBudget.getAmount());
     }
 
     @Test
