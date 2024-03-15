@@ -26,13 +26,13 @@ CREATE TABLE `budget` (
   `id` int NOT NULL AUTO_INCREMENT,
   `monthId` int NOT NULL,
   `typeId` int NOT NULL,
-  `amount` int NOT NULL,
+  `amount` decimal(5,2) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `budgettype_fk` (`typeId`),
   KEY `month_fk` (`monthId`),
   CONSTRAINT `budgettype_fk` FOREIGN KEY (`typeId`) REFERENCES `budgettype` (`id`),
   CONSTRAINT `month_fk` FOREIGN KEY (`monthId`) REFERENCES `month` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,6 +41,7 @@ CREATE TABLE `budget` (
 
 LOCK TABLES `budget` WRITE;
 /*!40000 ALTER TABLE `budget` DISABLE KEYS */;
+INSERT INTO `budget` VALUES (1,1,15,34.50),(2,2,1,975.25),(3,1,1,975.25);
 /*!40000 ALTER TABLE `budget` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -101,4 +102,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-03-14 12:58:24
+-- Dump completed on 2024-03-15  9:26:39
